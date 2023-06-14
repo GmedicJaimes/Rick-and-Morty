@@ -1,0 +1,26 @@
+.containerSearch input{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto Mono';
+}
+
+.containerSearch button{
+  display: inline-block;
+  padding: .6em;
+  margin-left: .5em;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  background-color: rgba(250, 133, 0, 0.993);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.2s;
+  font-family: 'Roboto Mono';
+  cursor: pointer;
+}
+
+.containerSearch button:hover {
+  border-color: #ffffff;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@500&family=Roboto+Mono:wght@300&display=swap');
+
+
+
+
+.containerCard{
+  background-color: #d1d1d1;
+  font-family: 'Roboto Mono';
+  font-weight: 500;
+  border-radius: 10px;
+  height: 460px;
+  width: 270px;
+  margin: 1rem;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerButton{
+  display: inline-block;
+  position: relative;
+}
+
+.containerButton button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border:none;
+  background-color: white;
+  
+  
+  padding: 5px 8px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btnFavorite{
+  position: absolute;
+  bottom: 224px;
+
+  font-size: 1.1rem;
+  color: rgb(255, 0, 0);
+  
+  
+}
+
+.btnClose{
+  position: absolute;
+  left: 230px;
+  bottom: 220px;
+
+  color: rgb(8, 8, 8);
+  font-size: 1.7rem;
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 1.3em;
+}
+
+.card img{
+  height: 250px;
+  width: 270px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 0ch 20px 2px;
+  height: 13vh;
+}
+
+.info p{
+  margin: 0;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+}
