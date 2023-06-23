@@ -29,17 +29,26 @@ function App() {
   //? LOGIN
   const [access, setAccess] = useState(false);
 
-  const EMAIL = 'akiloty3@gmail.com';
-  const PASSWORD = 'dayana14'
+  // const EMAIL = 'akiloty3@gmail.com';
+  // const PASSWORD = 'dayana14'
 
   const navigate = useNavigate();
 
 
   //! funcion seguridad que valida datos
-  function login(userData) {
-    if(userData.password === PASSWORD && userData.email === EMAIL){
-      setAccess(true);
-      navigate('/home');
+  const login = async (userData) => {
+
+    try {
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      const { data } = await axios(URL + `?email=${email}&password=${password}`)
+
+      const { access } = data;
+      setAccess(access);
+      access && navigate('/home'); 
+
+    } catch (error) {
+      console.log('Not found');
     }
   }
 
@@ -49,19 +58,18 @@ function App() {
  
 
   //! funcion para buscar en la api de rick and morty, el personaje que queramos
-  const onSearch = (id) => {
-    axios(`http://localhost:3001/rickandmorty/character/${id}`)
-    .then(response => response.data)
-    .then((data) => {
-      if (data.name) {
+  const onSearch = async (id) => {
+
+    try {
+      const { data } = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+
+      if(data.name) {
         setCharacters((oldChars) => [...oldChars, data]);
-      } else {
-        window.alert('¡No hay personajes con este ID!');
       }
-    })
-    .catch(() => {
+      
+    } catch (error) {
       window.alert('No hay personajes con ese ID')
-    });
+    }
   }
 
 

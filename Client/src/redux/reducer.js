@@ -1,17 +1,17 @@
 import { ADD_FAV, REMOVE_FAV } from "./actions"
 
 
-let initialState = {myFavorites: []}
+let initialState = {myFavorites: [], allCharactersFav: []}
 
 const reducer = (state = initialState, action) => {
 
   switch(action.type){
     
     case ADD_FAV:
-      return {...state, myFavorites: [...state.myFavorites, action.payload]}
+      return {...state, myFavorites: action.payload, allCharactersFav: action.payload}
     
     case REMOVE_FAV:
-      return {...state, myFavorites: state.myFavorites.filter(fav => fav.id !== action.payload)}
+      return {...state, myFavorites: action.payload}
     
     
     default:
