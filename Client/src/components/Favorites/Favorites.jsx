@@ -1,10 +1,11 @@
 import Card from "../Card/Card";
 import { connect }  from "react-redux";
+import style from "../Favorites/Favorites.module.css"
 
 
 const Favorites = ({myFavorites}) => {
   return(
-    <div>
+    <div className={style.favorites}>
     {
       myFavorites?.map(fav => {
         return(

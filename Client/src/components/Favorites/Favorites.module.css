@@ -1,9 +1,7 @@
-.cardList {
-
+.favorites{
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 82px ;
+  padding: 50px 82px;
   background-color: #f0ead2;
-  height: 100vh;  
-
+  height: 100vh; 
 }
