@@ -1,7 +1,8 @@
 //? imports
 import { useState } from "react";
 import validation from "./validation";
-import style from './Form.module.css'
+import style from './Form.module.css';
+import logo from '../../assets/logo.webp'
 
 
 
@@ -41,7 +42,7 @@ const Form = ({login}) => {
   return(
     <div className={style.container}>
       <form onSubmit={handleSubmit} className={style.containerLogin} >
-        <h2 className={style.title}>LOGIN</h2>
+        <img className={style.imagenLogo} src={logo}alt="logo" />
         <div className={style.labelEmail}>
           <label htmlFor="">Email:</label>
           <input type="text" name='email' placeholder="Your email" value={userData.email} onChange={handleChange}/>
@@ -57,7 +58,7 @@ const Form = ({login}) => {
             errors.password && <span>{errors.password}</span>
           }
         </div>
-        <button>SUBMIT</button>
+        <button className={style.buttonLogin}>Login</button>
       </form>
     </div>
   );

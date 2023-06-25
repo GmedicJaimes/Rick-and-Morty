@@ -1,6 +1,8 @@
 .container{
-  background-color: #0c528a;
+  background-image: url('../../assets/fondo1.png');
+  background-size: cover;
   height: 100vh;
+
 
   display: flex;
   justify-content: center;
@@ -8,15 +10,20 @@
   
 }
 
-.title{
-  font-size: 40px;
-  padding-top: 50px;
-  padding-bottom: 30px;
+.imagenLogo{
+  width: 400px;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  
 }
 
 
 .containerLogin {
-  background-color: #ffffff;
+  background-color: #ffffffc0;
 
   display: flex;
   flex-direction: column;
@@ -27,7 +34,7 @@
   width: 370px;
   height: 440px;
 
-  font-family: 'Roboto Mono';
+  font-family: 'Lexend Deca';
   font-weight: bold;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
@@ -45,14 +52,19 @@
 .labelEmail input{
   width:320px;
   height: 30px;
-  border: 2px solid #0c528a;
+  border: 2px solid #3a5a40;
   border-radius: 5px;
   outline: none;
   font-size: .9rem;
-  font-family: 'Roboto Mono';
+  font-family: 'Lexend Deca';
   padding-left: 3px;
-  background-color: #7bc2fc;
+  background-color: #a3b18a;
 
+}
+
+.labelEmail input::placeholder{
+  color: white;
+  text-align: center;
 }
 
 .labelEmail span{
@@ -71,13 +83,18 @@
 .labelPassword input{
   width: 320px;
   height: 30px;
-  border: 2px solid #0c528a;
+  border: 2px solid #3a5a40;
   border-radius: 5px;
   outline: none;
   font-size: .9rem;
-  font-family: 'Roboto Mono';
+  font-family: 'Lexend Deca';
   padding-left: 3px;
-  background-color: #7bc2fc;
+  background-color: #a3b18a;
+}
+
+.labelPassword input::placeholder{
+  color: white;
+  text-align: center;
 }
 
 .labelPassword span{
@@ -85,18 +102,18 @@
   color:#fa0707;
 }
 
-button{
-  background-color: #0c528a;
-  padding: 10px 140px;
-  border-radius: 10PX;
+.buttonLogin{
+  background-color: #3a5a40;
+  padding: 10px 145px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
   color: white;
 
-  font-family: 'Roboto Mono';
+  font-family: 'Lexend Deca';
   font-weight: bold;
 }
 
-button:hover{
-  background-color: #1263a5;
+.buttonLogin:hover{
+  background-color: #4f744f;
 }
