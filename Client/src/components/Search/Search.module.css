@@ -3,7 +3,8 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: 'Roboto Mono';
+  outline: none; 
+  font-family: 'Lexend Deca';
 }
 
 .containerSearch button{
@@ -11,13 +12,14 @@
   padding: .6em;
   margin-left: .5em;
   border: 0.16em solid rgba(255, 255, 255, 0);
-  background-color: rgba(250, 133, 0, 0.993);
+  background-color: #588157;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
+
+  
+  font-family: 'Lexend Deca';
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
   transition: all 0.2s;
-  font-family: 'Roboto Mono';
   cursor: pointer;
 }
 

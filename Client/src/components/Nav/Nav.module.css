@@ -1,28 +1,24 @@
 .containerNav{
-  background-color: #FAEA5F; 
-  /* #2df7ad */
-  /* opacity: .8; */
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+  background-color: #344e41; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.7);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10%;
 
-  font-family: 'Roboto Mono';
+  font-family: 'Lexend Deca';
 }
 
 .unorderList{
   display: flex;
 }
 
-
 .unorderList li {
-  color: black;
+  color: rgb(255, 254, 254);
   font-weight: bold;
   text-decoration: none;
   padding-left: 20px;
-  /* list-style: none; */
   
   display: flex;
   justify-content: flex-end;
@@ -33,5 +29,5 @@
 }
 
 .unorderList li:hover{
-  color: rgb(255, 123, 0);
+  color: #a3b18a;
 }
