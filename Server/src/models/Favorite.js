@@ -7,12 +7,27 @@ module.exports = (sequelize) => {
       allowNull: false,
       primaryKey: true
     },
-    email: {
+    name: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    status: {
+      type: DataTypes.ENUM("Alive", "Dead", "unknown"),
+      allowNull: false,
+    }, 
+    species: {
       type: DataTypes.STRING,
       allowNull: false,
-      isEmail: true
     },
-    password: {
+    gender: {
+      type: DataTypes.ENUM("Female","Male","Genderless","Unknowm"),
+      allowNull: false,
+    },
+    origin: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    image: {
       type: DataTypes.STRING,
       allowNull: false,
     }

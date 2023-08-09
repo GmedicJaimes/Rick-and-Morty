@@ -17,13 +17,14 @@ const Nav = ({onSearch}) => {
             <li>Home</li>
           </Link>
           
+          <Link to='/favorites' className={style.link}>
+            <li>Favorites</li>
+          </Link>
+          
           <Link to="/about" className={style.link}>
             <li>About</li>
           </Link>
           
-          <Link to='/favorites' className={style.link}>
-            <li>Favorites</li>
-          </Link>
 
           <li>Contact Galaxy</li>
         </ul>
